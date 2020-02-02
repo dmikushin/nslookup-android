@@ -47,7 +47,7 @@ static int lookup_host(const char* host)
 	}
 	printf("\n");
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 
 int main(int argc, char* argv[])
@@ -58,8 +58,6 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 
-	lookup_host(argv[1]);
-
-	return EXIT_SUCCESS;
+	return lookup_host(argv[1]);
 }
 
